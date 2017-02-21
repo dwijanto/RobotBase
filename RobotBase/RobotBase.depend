@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+1486940426 source:c:\arduino\robotbase\v202_protocol.cpp
+	"v202_protocol.h"
+
+1486939485 c:\arduino\robotbase\v202_protocol.h
+	"Arduino.h"
+	"nrf24l01p.h"
+
+1371033102 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\arduino.h
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/io.h>
+	<avr/interrupt.h>
+	"binary.h"
+	"WCharacter.h"
+	"WString.h"
+	"HardwareSerial.h"
+	"pins_arduino.h"
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\binary.h
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wcharacter.h
+	<ctype.h>
+
+1371033134 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\wstring.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<avr/pgmspace.h>
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\hardwareserial.h
+	<inttypes.h>
+	"Stream.h"
+	"USBAPI.h"
+
+1371032830 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\stream.h
+	<inttypes.h>
+	"Print.h"
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\print.h
+	<inttypes.h>
+	<stdio.h>
+	"WString.h"
+	"Printable.h"
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\printable.h
+	<new.h>
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\new.h
+	<stdlib.h>
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\cores\arduino\usbapi.h
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\variants\eightanaloginputs\pins_arduino.h
+	"../standard/pins_arduino.h"
+
+1362986950 c:\arduino\codeblocks\arduino\hardware\arduino\variants\standard\pins_arduino.h
+	<avr/pgmspace.h>
+
+1447805350 c:\arduino\robotbase\nrf24l01p.h
+	"arduino.h"
+	"WProgram.h"
+	<SPI.h>
+
+1487408861 source:c:\arduino\robotbase\robotbase.ino
+	<Arduino.h>
+	<SPI.h>
+	"V202_protocol.h"
+	"RF24MJXRemoteControl.h"
+	"L9110SMotorDriver.h"
+	<Servo.h>
+
+1486941440 c:\arduino\robotbase\rf24mjxremotecontrol.h
+	"RemoteControlDriver.h"
+
+1446159553 source:c:\arduino\robotbase\nrf24l01p.cpp
+	"nrf24l01p.h"
+
+1450834667 c:\arduino\robotbase\remotecontroldriver.h
+
+1487407920 c:\arduino\robotbase\l9110smotordriver.h
+	"MotorDriver.h"
+
+1428717473 c:\arduino\robotbase\motordriver.h
+
