@@ -651,10 +651,34 @@
 		<Compiler>
 			<Add directory="." />
 		</Compiler>
+		<Unit filename="I2Cdev.cpp">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="I2Cdev.h">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
 		<Unit filename="L9110SMotorDriver.h">
 			<Option target="Arduino Nano (328)" />
 		</Unit>
+		<Unit filename="MPU6050.cpp">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="MPU6050.h">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="MPU6050_6Axis_MotionApps20.h">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="MPU6050_9Axis_MotionApps41.h">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
 		<Unit filename="MotorDriver.h">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="PID_v1.cpp">
+			<Option target="Arduino Nano (328)" />
+		</Unit>
+		<Unit filename="PID_v1.h">
 			<Option target="Arduino Nano (328)" />
 		</Unit>
 		<Unit filename="RF24MJXRemoteControl.h">
@@ -666,6 +690,9 @@
 		<Unit filename="RobotBase.ino">
 			<Option compile="1" />
 			<Option link="1" />
+		</Unit>
+		<Unit filename="helper_3dmath.h">
+			<Option target="Arduino Nano (328)" />
 		</Unit>
 		<Unit filename="nrf24l01p.cpp">
 			<Option target="Arduino Nano (328)" />
