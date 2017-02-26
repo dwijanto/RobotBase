@@ -4,7 +4,7 @@
 #define MPU_DEVICE
 #define REMOTE_CONTROL
 #define L9110S_DRIVER
-#define SERV0_DEVICE
+//#define SERV0_DEVICE
 
 //MPU6050
 #ifdef MPU_DEVICE
@@ -16,6 +16,8 @@ MPU6050 mpu;
 
 // RC
 #ifdef REMOTE_CONTROL
+//#define TANK
+#define BOAT
 #include "V202_protocol.h"
 v202Protocol protocol;
 #include "RF24MJXRemoteControl.h"
@@ -95,13 +97,15 @@ public:
             }
         }
 
-
+        #ifdef SERV0_DEVICE
         if (millis() - servoCycle > 15)
         {
             servo1.writeMicroseconds(remoteCmd.rudder == 0 ? 1500:remoteCmd.rudder);
             servoCycle = millis();
 
         }
+        #endif // SERV0_DEVICE
+
 
 
 
@@ -156,6 +160,8 @@ void loop()
     //digitalWrite(13, HIGH);   // set the LED on
     //delay(1000);              // wait for a second
     //digitalWrite(13, LOW);    // set the LED off
-    robot.runremote();
+    //robot.runremote();
+
+    robot.run();
     //servo1.writeMicroseconds(2000);
 }

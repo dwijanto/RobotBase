@@ -1,3 +1,4 @@
+
 #ifndef RF24MJXREMOTECONTROL_H_INCLUDED
 #define RF24MJXREMOTECONTROL_H_INCLUDED
 
@@ -136,17 +137,23 @@ public:
         cmd.throttle = ppm[0] * ppm[4]; //throttle * flag
         cmd.rudder = ppm[1]; //map(ppm[1], 1000, 2000, 0, 180);
 
+        #ifdef TANK
+        if (ppm[1] > 1500){
+            //Serial.println("Turn Right");
+            cmd.turnRight();
+        }else if(ppm[1] < 1500){
+           // Serial.println("Turn Left");
+            cmd.turnLeft();
+        }else if(ppm[1] = 1500){
+            cmd.goForward();
+        }
+        #endif
 
-        //if (ppm[1] > 1500){
-        //    //Serial.println("Turn Right");
-        //    cmd.turnRight();
-        //}else if(ppm[1] < 1500){
-        //   // Serial.println("Turn Left");
-        //    cmd.turnLeft();
-        //}else if(ppm[1] = 1500){
-        //    cmd.goForward();
-        //}
+
+
+        #ifdef BOAT
         cmd.goForward();
+        #endif // BOAT
 
         if (cmd.key !=command_t::keyNone && cmd.key == lastkey)
         {
